@@ -1,0 +1,31 @@
+@import "../../assets/scss/color", "../../assets/scss/mixin";
+
+.navlink {
+  color: black;
+  font-size: 1rem;
+
+  @include mobile {
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &--big {
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    @include mobile {
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &--no-underline {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
